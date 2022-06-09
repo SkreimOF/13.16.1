@@ -15,7 +15,7 @@ namespace Compare
             Console.WriteLine("Method 1 Time Elapsed (ms): {0}", TimeMethod(List));
             Console.WriteLine("Method 2 Time Elapsed (ms): {0}", TimeMethod(LinkedList));
         }
-        
+
         //Вычисляет затраченное время полученного метода.
         static double TimeMethod(Action methodToTime)
         {
@@ -25,7 +25,7 @@ namespace Compare
             stopwatch.Stop();
             return stopwatch.Elapsed.TotalMilliseconds;
         }
-        
+
         //Метод 1.
         static void List()
         {
